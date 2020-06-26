@@ -1,0 +1,23 @@
+{
+  "name": "auction01",
+  "version": "1.0.0",
+  "description": "Server",
+  "main": "Example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CasualK/Auction01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CasualK/Auction01/issues"
+  },
+  "homepage": "https://github.com/CasualK/Auction01#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
