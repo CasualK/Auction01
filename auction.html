@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>경매장</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <nav>
+        <nav id="topMenu">
+            <ul>
+
+                <li><a class="menuLink" href="#">책</a></li>
+                <li><a class="menuLink" href="#">전자기기</a></li>
+                <li><a class="menuLink" href="#">식권</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <img src="dongseo.jpg" alt="떠라좀" id="pic">
+
+
+    <div>
+        <table style="border: 1px;" id="dynamicTable">
+            <thead>
+                <tr>
+                    <th>책 제목</th>
+                    <th>가격</th>
+                </tr>
+            </thead>
+            <tbody id="dynamicTbody">
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <input type="text" placeholder="책제목" id="inName">
+        <input type="text" placeholder="가격" id="money">
+        <button onclick="tableCreate()">올리기</button>
+        <button onclick="tableDelete()">삭제하기</button>
+    </div>
+
+
+    <style>
+        #pic {
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        #topMenu {
+            height: 30px;
+            width: 50%;
+            float: right;
+        }
+        
+        #topMenu ul li {
+            list-style: none;
+            color: white;
+            background-color: #2d2d2d;
+            float: left;
+            line-height: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            ;
+            vertical-align: middle;
+            text-align: center;
+        }
+        
+        #topMenu .menuLink {
+            text-decoration: none;
+            color: white;
+            display: block;
+            width: 150px;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: "Trebuchet MS", Dotum, Arial;
+        }
+        
+        #topMenu .menuLink:hover {
+            color: red;
+            background-color: #4d4d4d;
+        }
+    </style>
+
+</body>
+
+</html>
