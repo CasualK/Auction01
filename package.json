@@ -1,23 +1,28 @@
 {
-  "name": "auction01",
-  "version": "1.0.0",
-  "description": "Server",
-  "main": "Example.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CasualK/Auction01.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CasualK/Auction01/issues"
-  },
-  "homepage": "https://github.com/CasualK/Auction01#readme",
-  "dependencies": {
-    "mysql": "^2.18.1"
-  }
+    "name": "auction01",
+    "version": "1.0.0",
+    "description": "Server",
+    "main": "Example.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CasualK/Auction01.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CasualK/Auction01/issues"
+    },
+    "homepage": "https://github.com/CasualK/Auction01#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "i": "^0.3.6",
+        "mysql": "^2.18.1",
+        "mysql2": "^2.1.0",
+        "sequ": "^0.1.7",
+        "sequelize": "^6.2.0"
+    }
 }
