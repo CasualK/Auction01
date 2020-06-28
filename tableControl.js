@@ -30,7 +30,6 @@ function tableCreate() {
 function tableDelete(){
     var id = document.getElementById('userid').value; 
     var name = document.getElementById('inName').value;
-    var max = present;
     for(var i = 1 ; i<=present ; i++){
         if(id == info[i-1].p_id ){
         var tableData = document.getElementById('testTable');
@@ -42,15 +41,19 @@ function tableDelete(){
 } 
 
 function renew(){ //입찰
- var p_much = document.getElementById('much').value; //입찰할 가격 
  var wline = document.getElementById('Aure').value;  //입찰할 행
 
  var table1 = document.getElementById("testTable"); //테이블 불러옴
- var str = table1.rows[wline].cells[1].value;   //이거 수정해야함 기존 데이터 읽어와서 입찰할 가격이랑 비교
- alert(str);                                    //코드 확인 테스트용 ALERT
- table1.rows[wline].cells[1].innerHTML = p_much; //입력한 행에 입력한 가격을 넣음
+ table1.rows[wline].cells[1].innerHTML =Number(table1.rows[wline].cells[1].innerHTML) + 500; //입력한 행에 입력한 가격을 넣음
 }
 
-function Revise(){ //수정 만들어야함
+function tableRevise(){ //수정
+    var name = document.getElementById('inName').value;
+    var wline = document.getElementById('Aure').value; 
+    alert('책 이름을 '+name+'로 수정');
+    var table1 = document.getElementById("testTable"); 
+
+        table1.rows[wline].cells[0].innerHTML = name //선택한 행
 
 }
+
