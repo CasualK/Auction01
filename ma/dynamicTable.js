@@ -1,26 +1,23 @@
-function tableCreate(){
-    var tc = new Array();
-    var html = '';
-                
-    var name = $("#inName").val();
-    var job = $("#inJob").val();
-    var age = $("#inAge").val();
-    var hobby = $("#inHobby").val();
-                
-    html += '<tr>';
-    html += '<td>'+name+'</td>';
-    html += '<td>'+job+'</td>';
-    html += '<td>'+age+'</td>';
-    html += '<td>'+hobby+'</td>';
-    html += '</tr>';
-                
-    $("#dynamicTable").append(html);
-                
-    $("#inName").val('');
-    $("#inJob").val('');
-    $("#inAge").val('');
-    $("#inHobby").val('');
-    }
-    function tableDelete(){
-        $('#dynamicTable tbody tr:last').remove();
-        }
+$(document).ready(function() {
+
+    /* $("table tr:first").css("background-color", "powderblue");
+    $("table tr:nth-child(3)").css("background-color", "powderblue");
+    $("table tr:nth-child(odd)").css("background-color", "powderblue"); */
+
+    //$("table").prepend("<tr><td>Zero!</tr>");
+
+    $("#prepend").click(function() {
+        $("table").prepend("<tr><td>Zero!</tr>");
+    });
+
+    $("#after").click(function() {
+        var itemString = "<tr><td>Here!</tr>";
+        var item = $(itemString);
+        /* item.hide(); */
+        $("table tr:nth-child(2)").after(item)
+    });
+
+    $("#remove").click(function() {
+        $("table tr:last").remove();
+    });
+});
