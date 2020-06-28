@@ -39,13 +39,16 @@
         
         <input type="text" placeholder="책제목" id="inName">
         <input type="text" placeholder="가격" id="money">
+        <input type="text" placeholder="ID" id="userid">
         <button onclick="tableCreate()">올리기</button>
         <button onclick="tableDelete()">삭제하기</button>
         <button onclick="tableRevise()" id="revise">수정하기</button>
     </div>
 
     <br>
-
+    <input type="text" placeholder="몇번째 줄" id="Aure"><input type='text' id='much' placeholder="입찰 금액" ><button onclick='renew()' type='button'  name='checkbox' >경매참여</button>
+    
+    
     <table id='testTable' width="100%" cellspacing='0'>
         <!-- cellspacing='0' is important, must stay -->
 
@@ -55,8 +58,6 @@
                 <th>책 제목</th>
                 <th>가격</th>
                 <th>남은 시간</th>
-                <th>경매 참여</th>
-                <th>선택</th>
             </tr>
         </thead>
         <!-- Table Header -->
@@ -71,7 +72,7 @@
         #push {
             margin-left: 9px;
             margin-top: 5px;
-            width: 500px;
+            width: 1000px;
             margin: auto;
         }
         
@@ -336,3 +337,7 @@ input:focus + button .fa {
 </body>
 
 </html>
+
+
+
+
