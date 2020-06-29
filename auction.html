@@ -18,14 +18,11 @@
                     <li><a class="menuLink" href="#">전자기기</a></li>
                     <li><a class="menuLink" href="#">식권</a></li>
                 </ul>
-                <form>
                     <fieldset>
-                        <input type="search" id="searchtext"/>
-                        <button type="submit" id="but1" onclick="search()"> 검색</button>
-                        <i class="fa fa-search"></i>
+                        <input type="text" id="searchtext"/>
+                        <button id="but1" onclick="search1()"> 검색</button>
                         </button>
                     </fieldset>
-                </form>
             </nav>
 
 
@@ -47,7 +44,7 @@
 
     <br>
     <div id="Aur">
-    <input type="text" placeholder="몇번째 줄" id="Aure">
+    <input type="text" placeholder="Line"" id="Aure">
     <button onclick='renew()' type='button'   >경매참여</button>
     <button onclick="tableRevise()" type='button'>수정하기</button>
     <button onclick="end()"" type='button'>경매 마감</button>
