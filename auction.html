@@ -46,10 +46,12 @@
     </div>
 
     <br>
+    <div id="Aur">
     <input type="text" placeholder="몇번째 줄" id="Aure">
     <button onclick='renew()' type='button'   >경매참여</button>
     <button onclick="tableRevise()" type='button'>수정하기</button>
-    
+    <button onclick="end()"" type='button'>경매 마감</button>
+    </div>
     <table id='testTable' width="100%" cellspacing='0'>
         <!-- cellspacing='0' is important, must stay -->
 
@@ -67,20 +69,42 @@
 
     </table>
 
+    <table id='endtable' width="50%" cellspacing='0'>
+        <thead>
+            <tr>
+                <th>책 이름</th>
+                <th>팔린 가격</th>
+            </tr>
+        </thead>
+
+    </table>
 
 
     <style>
+        #testTable {
+            margin-top: 20px;
+        }
+        
+        #Aur {
+            margin-left: 9px;
+            width: 500px;
+            margin-bottom: 20px;
+           margin:auto;   
+        }
+
         #push {
             margin-left: 9px;
-            margin-top: 5px;
-            width: 1000px;
+          
+            width: 700px;
             margin: auto;
+       
         }
         
         .menubar {
             width: auto;
             height: fit-content;
             background-color: #2d2d2d;
+         
         }
         
         #pic {
@@ -91,6 +115,7 @@
         #topMenu {
             margin: 0 auto;
             overflow: hidden;
+            margin-bottom: 30px;
             
         }
         
@@ -338,7 +363,6 @@ input:focus + button .fa {
 </body>
 
 </html>
-
 
 
 
