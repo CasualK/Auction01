@@ -57,3 +57,20 @@ function tableRevise(){ //수정
 
 }
 
+
+function end(){ //마감
+    var wline = document.getElementById('Aure').value; 
+    var tableData = document.getElementById('testTable');
+    var tablein = document.getElementById('endtable');
+    
+    var a_name = tableData.rows[wline].cells[0].innerHTML;
+    var a_pric = tableData.rows[wline].cells[1].innerHTML;
+    tableData.deleteRow(wline);
+    
+    var row = tablein.insertRow(tablein.rows.length); 
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = "<td>" + (a_name) + "</td>";
+    cell2.innerHTML = "<td>" + (a_pric) + "</td>";
+
+}
