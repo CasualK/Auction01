@@ -74,3 +74,19 @@ function end(){ //마감
     cell2.innerHTML = "<td>" + (a_pric) + "</td>";
 
 }
+
+function search() {
+ var search = document.getElementById('searchtext').value; 
+    
+ var tableData = document.getElementById('testTable');
+
+ for(var i = 1 ; i < 100; i ++ ){
+    var indata = tableData.rows[i].cells[0].innerHTML;
+    if(search == indata){
+        tableData.rows[i].cells[0].style.color = "#00AA00";
+    }else{
+        tableData.rows[i].cells[0].style.color = "#000000";
+    }
+ }
+ 
+}
